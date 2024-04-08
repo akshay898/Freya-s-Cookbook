@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Freyja's Cookbook</title>
+        <div id="freyaheader">
+        <div class="header header-row" >
+            <h1><a href="#" class="main">Freyja</a></h1>
+            <nav class="navbar">
+                <a href="#home" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#feature">Featured</a></li>
+                        <li><a href="#bfast">Breakfast</a></li>
+                        <li><a href="#lunch">Lunch</a></li>
+                        <li><a href="#drinks">Drinks</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</head>
+<body>
+<div  class="body-freya">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script  type="text/javascript" src="./app.js"></script>
+<div class="motto">
+    <figcaption class="motto-text">"Budget-friendly cooking made simple and scrumptious!"</figcaption>
+</div>
+<div class="featured" id="feature">
+    <h2>Featured</h2>
+
+    <div class="tile">
+    <div class="one-tile">
+        <img src="./img/avt.jpg"  alt="avocado" title="avocado" loading="eager" style="width:100%;">
+        <div class="img-text">
+        <h4>Avocado Toast</h4>
+        <a href="#avocado"><button  onclick="avocado();">Read recipe</button></a>
+        </div>
+      </div>
+
+      <div class="one-tile">
+        <img src="./img/banshake.jpg"  alt="banana" title="banana" loading="eager" style="width:100%;">
+        <div class="img-text">
+        <h4>Banana smoothie</h4>
+        <a href="#banana"><button onclick="banana();">Read recipe</button></a>
+        </div>
+      </div>
+      <div class="one-tile">
+        <img src="./img/mozpizza.jpg"  alt="pizza" title="pizza" loading="eager" style="width:100%;">
+        <div class="img-text">
+        <h4>Gourmet pizza</h4>
+        <a href="#pizza"><button onclick="pizza();">Read recipe</button></a>
+        </div>
+      </div>
+</div>
+
+<!--avc toast-->
+<div class="avocado" id="avocado" style="display:none">
+    <div class="content-head">
+    <h3>Avocado Toast</h3>
+    <button class="closebutton"  onclick="avocadoclose();">&times;</button>
+    </div>
+    <h4>Ingredients:</h4>
+    <ul class="ing">
+        <li class="lis">1 ripe avocado</li>
+        <li class="lis">2 slices of bread (whole grain or your preferred type)</li>
+        <li class="lis">Salt and pepper to taste</li>
+        <li class="lis">Optional toppings: sliced tomatoes, poached or fried eggs, crumbled feta cheese, red pepper flakes, sliced radishes, etc.</li>
+    </ul>
+
+    <h4>Instructions:</h4>
+    <ol class="olis">
+        <li class="lis">Start by toasting your bread slices until they reach your desired level of crispiness.</li>
+        <li class="lis">While the bread is toasting, cut the avocado in half lengthwise and remove the pit. Scoop out the flesh into a small bowl.</li>
+        <li class="lis">Mash the avocado with a fork until it reaches your desired consistency. Some people prefer it completely smooth, while others like it chunky. Season the mashed avocado with salt and pepper to taste.</li>
+        <li class="lis">Once the bread is toasted, spread the mashed avocado evenly onto each slice.</li>
+        <li class="lis">If desired, add any additional toppings on top of the mashed avocado. Some popular options include sliced tomatoes, poached or fried eggs, crumbled feta cheese, red pepper flakes, sliced radishes, etc.</li>
+        <li class="lis">Serve immediately and enjoy your delicious avocado toast!</li>
+    </ol>
+
+    <p class="note">Note: Avocado toast is highly customizable, so feel free to get creative with the toppings and seasonings based on your preferences. Additionally, you can drizzle a little olive oil or squeeze some lemon juice over the top for added flavor.</p><hr>
+</div>
+
+<!--banana smoothie-->
+<div class="banana" id="banana" style="display:none">
+    <div class="content-head">
+    <h3>Banana Smoothie</h3>
+    <button class="closebutton"  onclick="bananaclose();">&times;</button>
+    </div>
+    <h4>Ingredients:</h4>
+    <ul class="ing">
+        <li class="lis">1 ripe banana, peeled and sliced</li>
+        <li class="lis">1/2 cup plain or vanilla yogurt (Greek yogurt or regular yogurt)</li>
+        <li class="lis">1/2 cup milk (dairy or plant-based such as almond, soy, or coconut milk)</li>
+        <li class="lis">1 tablespoon honey or maple syrup (optional, for added sweetness)</li>
+        <li class="lis">1/2 teaspoon vanilla extract (optional, for flavor)</li>
+        <li class="lis">Ice cubes (optional, for a colder smoothie)</li>
+    </ul>
+
+    <h4>Instructions:</h4>
+    <ol class="olis">
+        <li class="lis">Place the sliced banana, yogurt, milk, honey or maple syrup (if using), and vanilla extract (if using) in a blender.</li>
+        <li class="lis">If you prefer a colder smoothie, add a handful of ice cubes to the blender as well.</li>
+        <li class="lis">Blend on high speed until all the ingredients are well combined and the smoothie reaches your desired consistency. If the smoothie is too thick, you can add more milk to thin it out.</li>
+        <li class="lis">Once blended to your liking, taste the smoothie and adjust the sweetness or flavor if necessary by adding more honey, maple syrup, or vanilla extract.</li>
+        <li class="lis">Pour the banana smoothie into glasses and serve immediately.</li>
+        <li class="lis">Optionally, you can garnish the smoothie with sliced bananas or a sprinkle of cinnamon before serving.</li>
+    </ol>
+
+    <p class="note">Enjoy your refreshing banana smoothie as a healthy breakfast, snack, or post-workout drink!</p><hr>
+</div>
+
+
+<!--pizza smoothie-->
+<div class="pizza" id="pizza" style="display:none">
+    <div class="content-head">
+    <h3>Gourmet Pizza</h3>
+    <button class="closebutton"  onclick="pizzaclose();">&times;</button>
+    </div>
+    <h4>Ingredients:</h4>
+    <ul class="ing">
+        <li class="lis">1 package (2 1/4 teaspoons) active dry yeast</li>
+        <li class="lis">1 teaspoon granulated sugar</li>
+        <li class="lis">1 cup warm water</li>
+        <li class="lis">2 1/2 cups all-purpose flour</li>
+        <li class="lis">1 teaspoon salt</li>
+        <li class="lis">2 tablespoons olive oil</li>
+        <li class="lis">1/2 cup tomato sauce</li>
+        <li class="lis">1 1/2 cups shredded mozzarella cheese</li>
+        <li class="lis">1/4 cup crumbled goat cheese (optional)</li>
+        <li class="lis">1/4 cup sliced sun-dried tomatoes</li>
+        <li class="lis">1/4 cup fresh basil leaves</li>
+        <li class="lis">Balsamic glaze (optional, for drizzling)</li>
+    </ul>
+
+    <h4>Instructions:</h4>
+    <ol class="olis">
+        <li class="lis"><b>Prepare the Pizza Dough:</b></li>
+        <ul class="ing">
+            <li class="lis">In a small bowl, combine the warm water, sugar, and yeast. Let it sit for about 5-10 minutes until the mixture becomes frothy.</li>
+            <li class="lis">In a large mixing bowl, combine the flour and salt. Make a well in the center and pour in the yeast mixture and olive oil.</li>
+            <li class="lis">Stir the ingredients together until a dough forms.</li>
+            <li class="lis">Turn the dough out onto a floured surface and knead for about 5-7 minutes until smooth and elastic.</li>
+            <li class="lis">Place the dough in a greased bowl, cover it with a clean kitchen towel, and let it rise in a warm place for about 1-1.5 hours until doubled in size.</li>
+        </ul>    
+        <li class="lis"><b>Preheat the Oven:</b></li>
+        <ul class="ing">
+            <li class="lis">Preheat your oven to 475°F (245°C) and place a pizza stone or upside-down baking sheet in the oven to heat up.</li>
+        </ul>
+        <li class="lis"><b>Assemble the Pizza:</b></li>
+        <ul class="ing">
+            <li class="lis">Once the dough has risen, punch it down and divide it into two equal portions.</li>
+            <li class="lis">Roll out each portion of dough on a lightly floured surface into a circle, about 12 inches in diameter.</li>
+            <li class="lis">Transfer the rolled-out dough to a piece of parchment paper.</li>
+        </ul>
+        <li class="lis"><b>Add the Toppings:</b></li>
+        <ul class="ing">
+            <li class="lis">Spread half of the tomato sauce evenly over each pizza dough, leaving a small border around the edges.</li>
+            <li class="lis">Sprinkle half of the shredded mozzarella cheese over each pizza.</li>
+            <li class="lis">Top the pizzas with the sliced prosciutto, sun-dried tomatoes, kalamata olives, and crumbled goat cheese.</li>
+        </ul>
+        <li class="lis"><b>Bake the Pizzas:</b></li>
+        <ul class="ing">
+            <li class="lis">Carefully transfer the pizzas (on the parchment paper) onto the preheated pizza stone or baking sheet in the oven.</li>
+            <li class="lis">Bake for about 12-15 minutes, or until the crust is golden brown and the cheese is bubbly and melted.</li>
+        </ul>
+        <li class="lis"><b>Finish and Serve:</b></li>
+        <ul class="ing">
+            <li class="lis">Remove the pizzas from the oven and let them cool for a minute or two.</li>
+            <li class="lis">Garnish the pizzas with fresh basil leaves and a drizzle of balsamic glaze, if desired.</li>
+        </ul>
+    </ol>
+
+    <p class="note">Enjoy your gourmet pizza with its delicious combination of flavors and textures!</p><hr>
+</div>
+</div>
+
+<div class="bfast" id="bfast">
+    <h2>Breakfast</h2>
+    
+<div class="owl-carousel owl-theme" style="margin-top:30px;">
+    <div class="item">
+        <div class="slide-img">
+            <img src="./img/dosa.jpg"  alt="dosa" title="dosa" loading="lazy" style="width:100%;">
+            <div class="img-text">
+            <h4>Dosa</h4>
+            <a href="#dosa"><button onclick="dosa();">Read recipe</button></a>
+            </div>
+    </div>
+    </div>
+    <div class="item">
+        <div class="slide-img">
+            <img src="./img/idli.jpg"  alt="idli" title="idli" loading="lazy" style="width:100%;">
+            <div class="img-text">
+            <h4>Idli</h4>
+            <a href="#idli"><button onclick="idli();">Read recipe</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="slide-img">
+            <img src="./img/vada.jpg"  alt="vada" title="vada" loading="lazy" style="width:100%;">
+            <div class="img-text">
+            <h4>Vada</h4>
+            <a href="#vada"><button onclick="vada();">Read recipe</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="slide-img">
+            <img src="./img/poori.jpg"  alt="poori" title="poori" loading="lazy" style="width:100%;">
+            <div class="img-text">
+            <h4>Puri</h4>
+            <a href="#poori"><button onclick="poori();">Read recipe</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="slide-img">
+            <img src="./img/ponganalu.jpg"  alt="ponganalu" title="ponganalu" loading="lazy" style="width:100%;">
+            <div class="img-text">
+            <h4>Ponganalu</h4>
+            <a href="#ponganalu"><button onclick="ponganalu();">Read recipe</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="slide-img">
+            <img src="./img/fruit-salad.jpg"  alt="salad" title="salad" loading="lazy" style="width:100%;">
+            <div class="img-text">
+            <h4>Fruit Salad</h4>
+            <a href="#fruit-salad"><button onclick="salad();">Read recipe</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="slide-img">
+            <img src="./img/egg-wrap.jpg"  alt="wrap" title="wrap" loading="lazy" style="width:100%;">
+            <div class="img-text">
+            <h4>Egg Wrap</h4>
+            <a href="#egg-wrap"><button onclick="wrap();">Read recipe</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="slide-img">
+            <img src="./img/egg-muffin.jpg"  alt="muffin" title="muffin" loading="lazy" style="width:100%;">
+            <div class="img-text">
+            <h4>Egg Muffin</h4>
+            <a href="#egg-muffin"><button onclick="muffin();">Read recipe</button></a>
+            </div>
+        </div>
+    </div>    
+    </div>
+    
+    <div class="dosa" id="dosa" style="display:none">
+        <div class="content-head">
+        <h3>Dosa</h3>
+        <button class="closebutton"  onclick="dosaclose();">&times;</button>
+        </div>
+        <h4>Ingredients:</h4>
+        <ul class="ing">
+            <li class="lis">1 cup Rice</li>
+            <li class="lis">1/4 cup Urad Dal (Black Lentils)</li>
+            <li class="lis">Water (as needed)</li>
+            <li class="lis">Salt to taste</li>
+        </ul>
+    
+        <h4>Instructions:</h4>
+        <ol class="olis">
+            <li class="lis">Wash rice, urad dal together. Soak them in water for 7-8 hours.</li>
+            <li class="lis">Drain the water and grind the soaked ingredients into a smooth batter. Add water as needed to get the right consistency.</li>
+            <li class="lis">Transfer the batter into a large bowl. Add salt and mix well.</li>
+            <li class="lis">Cover the bowl and let the batter ferment overnight or for at least 8 hours in a warm place.</li>
+            <li class="lis">After fermentation, the batter will rise and become airy.</li>
+            <li class="lis">Heat a non-stick or cast iron skillet over medium heat.</li>
+            <li class="lis">Pour a ladleful of batter onto the center of the skillet and spread it in a circular motion to make a thin dosa.</li>
+            <li class="lis">Drizzle oil around the edges of the dosa and cook until the bottom turns golden brown.</li>
+            <li class="lis">Flip the dosa and cook the other side until it's cooked through.</li>
+            <li class="lis">Serve hot dosas with peanut chutney and sambar.</li>
+        </ol>
+        
+        <hr>
+    </div>  
+    
+    <div class="idli" id="idli" style="display:none">
+        <div class="content-head">
+        <h3>Idli</h3>
+        <button class="closebutton"  onclick="idliclose();">&times;</button>
+        </div>
+        <h4>Ingredients:</h4>
+        <ul class="ing">
+            <li class="lis">1 cup Idli Rava</li>
+            <li class="lis">1 cup Urad Dal (Split Black Lentils)</li>
+            <li class="lis">Water (as needed)</li>
+            <li class="lis">Salt to taste</li>
+        </ul>
+    
+        <h4>Instructions:</h4>
+        <ol class="olis">
+            <li class="lis">Wash idli rava, urad dal. Soak them in water for overnight.</li>
+            <li class="lis">Drain the water and grind urad dal into a smooth batter. Add water as needed to get the right consistency.</li>
+            <li class="lis">Transfer the batter into a large bowl. Add salt, drained idli rava and mix well.</li>
+            <li class="lis">Cover the bowl and let the batter ferment overnight or for at least 8 hours in a warm place.</li>
+            <li class="lis">After fermentation, the batter will rise and become airy.</li>
+            <li class="lis">Grease the idli molds with oil or ghee.</li>
+            <li class="lis">Pour the batter into the molds, filling them about 3/4 full.</li>
+            <li class="lis">Steam the idlis in a steamer for about 10-12 minutes until they are cooked through.</li>
+            <li class="lis">Remove the idlis from the molds using a spoon.</li>
+            <li class="lis">Serve hot idlis with sambar, peanut chutney, or any desired accompaniment.</li>
+        </ol>
+        
+        <hr>
+    </div>  
+
+    <div class="vada" id="vada" style="display:none">
+        <div class="content-head">
+        <h3>Vada</h3>
+        <button class="closebutton"  onclick="vadaclose();">&times;</button>
+        </div>
+        <h4>Ingredients:</h4>
+        <ul class="ing">
+            <li class="lis">1 cup Urad Dal (Split Black Lentils)</li>
+            <li class="lis">2-3 Green Chilies, chopped</li>
+            <li class="lis">1 inch Ginger, grated</li>
+            <li class="lis">A few Curry Leaves, chopped</li>
+            <li class="lis">2 tablespoons Chopped Coriander Leaves</li>
+            <li class="lis">1 teaspoon Cumin Seeds</li>
+            <li class="lis">1/2 teaspoon Black Pepper, crushed</li>
+            <li class="lis">1/2 teaspoon Baking Soda</li>
+            <li class="lis">Salt to taste</li>
+            <li class="lis">Oil for deep frying</li>
+        </ul>
+    
+        <h4>Instructions:</h4>
+        <ol class="olis">
+            <li class="lis">Wash urad dal and soak it in water for overnight.</li>
+            <li class="lis">Drain the water and grind the soaked dal into a smooth batter using very little water.</li>
+            <li class="lis">Transfer the batter into a mixing bowl. Add chopped green chilies, grated ginger, chopped curry leaves, chopped coriander leaves, cumin seeds, crushed black pepper, baking soda, and salt. Mix well.</li>
+            <li class="lis">Heat oil in a deep frying pan.</li>
+            <li class="lis">Take a small portion of the batter and shape it into a small ball. Flatten it slightly to form a vada shape with a hole in the center.</li>
+            <li class="lis">Carefully slide the shaped vada into the hot oil.</li>
+            <li class="lis">Fry the vadas on medium heat until they turn golden brown and crispy on all sides.</li>
+            <li class="lis">Remove the fried vadas using a slotted spoon and drain excess oil on paper towels.</li>
+            <li class="lis">Serve hot vadas with peanut chutney or sambar.</li>
+        </ol>
+        
+        <hr>
+    </div>  
+
+    <div class="poori" id="poori" style="display:none">
+        <div class="content-head">
+        <h3>Puri</h3>
+        <button class="closebutton"  onclick="pooriclose();">&times;</button>
+        </div>
+        <h4>Ingredients:</h4>
+        <ul class="ing">
+            <li class="lis">2 cups Whole Wheat Flour</li>
+            <li class="lis">1/2 teaspoon Salt</li>
+            <li class="lis">1 tablespoon Oil</li>
+            <li class="lis">Water (as needed)</li>
+            <li class="lis">Oil for deep frying</li>
+        </ul>
+    
+        <h4>Instructions:</h4>
+        <ol class="olis">
+            <li class="lis">In a mixing bowl, combine whole wheat flour, salt, and oil.</li>
+            <li class="lis">Gradually add water and knead the mixture into a smooth dough. The dough should be firm but pliable.</li>
+            <li class="lis">Cover the dough with a damp cloth and let it rest for about 15-20 minutes.</li>
+            <li class="lis">Divide the dough into small equal-sized balls.</li>
+            <li class="lis">Roll out each ball into a small circle using a rolling pin. The puris should be neither too thick nor too thin.</li>
+            <li class="lis">Heat oil in a deep frying pan over medium-high heat.</li>
+            <li class="lis">Once the oil is hot, gently slide the rolled out puris into the oil, one at a time.</li>
+            <li class="lis">Fry the puris until they puff up and turn golden brown on both sides.</li>
+            <li class="lis">Remove the fried puris using a slotted spoon and drain excess oil on paper towels.</li>
+            <li class="lis">Serve hot puris with potato curry, chana masala, or any desired accompaniment.</li>
+        </ol>
+        
+        <hr>
+    </div>  
+
+    <div class="ponganalu" id="ponganalu" style="display:none">
+        <div class="content-head">
+        <h3>Ponganalu</h3>
+        <button class="closebutton"  onclick="ponganaluclose();">&times;</button>
+        </div>
+        <h4>Ingredients:</h4>
+        <ul class="ing">
+            <li class="lis">1 cup Idli Batter</li>
+            <li class="lis">1/4 cup Finely Chopped Onions</li>
+            <li class="lis">2-3 Green Chilies, finely chopped</li>
+            <li class="lis">2 tablespoons Finely Chopped Coriander Leaves</li>
+            <li class="lis">1/2 teaspoon Mustard Seeds</li>
+            <li class="lis">1/2 teaspoon Cumin Seeds</li>
+            <li class="lis">Salt to taste</li>
+            <li class="lis">Oil for greasing</li>
+        </ul>
+    
+        <h4>Instructions:</h4>
+        <ol class="olis">
+            <li class="lis">In a mixing bowl, combine idli batter, chopped onions, chopped green chilies, chopped coriander leaves, grated carrot, and salt. Mix well.</li>
+            <li class="lis">Heat a ponganalu pan (appe pan) on medium heat and grease the molds with oil.</li>
+            <li class="lis">In a small tadka pan, heat a little oil and add mustard seeds, cumin seeds, and asafoetida. Let them splutter.</li>
+            <li class="lis">Pour the tadka into the idli batter mixture and mix well.</li>
+            <li class="lis">Fill each mold of the ponganalu pan with the batter mixture.</li>
+            <li class="lis">Cover the pan and cook the ponganalu on low to medium heat until they turn golden brown on the bottom.</li>
+            <li class="lis">Flip the ponganalu using a spoon or fork and cook until they are evenly cooked and golden brown on all sides.</li>
+            <li class="lis">Remove the cooked ponganalu from the pan and repeat the process with the remaining batter.</li>
+            <li class="lis">Serve hot ponganalu with chutney or sambar.</li>
+        </ol>
+        
+        <hr>
+    </div>  
+
+    <div class="fruit-salad" id="fruit-salad" style="display:none">
+        <div class="content-head">
+        <h3>Fruit Salad</h3>
+        <button class="closebutton"  onclick="saladclose();">&times;</button>
+        </div>
+        <h4>Ingredients:</h4>
+        <ul class="ing">
+            <li class="lis">1 Apple, diced</li>
+            <li class="lis">1 Banana, sliced</li>
+            <li class="lis">1 cup Grapes, halved</li>
+            <li class="lis">1 cup Strawberries, quartered</li>
+            <li class="lis">1 Orange, peeled and segmented</li>
+            <li class="lis">1/2 cup Pineapple chunks</li>
+            <li class="lis">1/2 cup Blueberries</li>
+            <li class="lis">1/2 cup Raspberries</li>
+            <li class="lis">1/4 cup Honey or Maple Syrup</li>
+            <li class="lis">1 tablespoon Fresh Lemon Juice</li>
+            <li class="lis">Fresh Mint Leaves (for garnish)</li>
+        </ul>
+    
+        <h4>Instructions:</h4>
+        <ol class="olis">
+            <li class="lis">In a large mixing bowl, combine all the diced and sliced fruits.</li>
+            <li class="lis">In a small bowl, whisk together honey or maple syrup with fresh lemon juice to make the dressing.</li>
+            <li class="lis">Pour the dressing over the mixed fruits and gently toss until the fruits are evenly coated.</li>
+            <li class="lis">Chill the fruit salad in the refrigerator for about 30 minutes before serving.</li>
+            <li class="lis">Garnish with fresh mint leaves just before serving.</li>
+            <li class="lis">Serve the fruit salad chilled as a refreshing and healthy dessert or snack.</li>
+        </ol>
+        
+        <hr>
+    </div>  
+
+    <div class="wrap" id="egg-wrap" style="display:none">
+        <div class="content-head">
+        <h3>Egg Wrap</h3>
+        <button class="closebutton"  onclick="wrapclose();">&times;</button>
+        </div>
+        <h4>Ingredients:</h4>
+        <ul class="ing">
+            <li class="lis">2 Chapatis (Indian flatbreads)</li>
+            <li class="lis">2 Eggs</li>
+            <li class="lis">1 Onion, thinly sliced</li>
+            <li class="lis">1 Tomato, thinly sliced</li>
+            <li class="lis">1 Green Bell Pepper, thinly sliced</li>
+            <li class="lis">1/2 teaspoon Red Chili Powder</li>
+            <li class="lis">1/2 teaspoon Cumin Powder</li>
+            <li class="lis">Salt to taste</li>
+            <li class="lis">2 tablespoons Oil</li>
+            <li class="lis">Fresh Coriander Leaves (optional, for garnish)</li>
+        </ul>
+    
+        <h4>Instructions:</h4>
+        <ol class="olis">
+            <li class="lis">Heat a non-stick skillet over medium heat and warm the chapatis on both sides. Set aside.</li>
+            <li class="lis">In a bowl, beat the eggs and season with red chili powder, cumin powder, and salt.</li>
+            <li class="lis">Heat oil in the same skillet over medium heat. Add thinly sliced onions, tomatoes, and green bell peppers. Sauté until they are soft and slightly caramelized.</li>
+            <li class="lis">Pour the beaten eggs over the sautéed vegetables in the skillet. Allow the eggs to set slightly.</li>
+            <li class="lis">Place one warm chapati on top of the partially cooked egg mixture in the skillet. Press down gently with a spatula.</li>
+            <li class="lis">Carefully flip the chapati with the egg mixture to cook the other side until the egg is fully cooked.</li>
+            <li class="lis">Repeat the process with the remaining chapati and egg mixture.</li>
+            <li class="lis">Once cooked, remove the egg-wrapped chapatis from the skillet and place them on a serving plate.</li>
+            <li class="lis">Garnish with fresh coriander leaves if desired.</li>
+            <li class="lis">Slice the egg wraps into halves or quarters and serve hot.</li>
+        </ol>
+        
+        <hr>
+    </div>  
+
+    <div class="muffin" id="egg-muffin" style="display:none">
+        <div class="content-head">
+        <h3>Egg Muffin</h3>
+        <button class="closebutton"  onclick="muffinclose();">&times;</button>
+        </div>
+        <h4>Ingredients:</h4>
+        <ul class="ing">
+            <li class="lis">6 Eggs</li>
+            <li class="lis">1/4 cup Milk</li>
+            <li class="lis">1/2 cup Grated Cheese</li>
+            <li class="lis">1/4 cup Diced Bell Peppers</li>
+            <li class="lis">1/4 cup Diced Onions</li>
+            <li class="lis">1/4 cup Diced Tomatoes</li>
+            <li class="lis">Salt and Pepper to taste</li>
+            <li class="lis">Cooking Spray or Melted Butter, for greasing</li>
+        </ul>
+    
+        <h4>Instructions:</h4>
+        <ol class="olis">
+            <li class="lis">Preheat your oven to 375°F (190°C). Grease a muffin tin with cooking spray or melted butter.</li>
+            <li class="lis">In a mixing bowl, crack the eggs and whisk them together with milk until well combined.</li>
+            <li class="lis">Stir in grated cheese, diced bell peppers, onions, tomatoes, salt, and pepper. Mix until evenly distributed.</li>
+            <li class="lis">Pour the egg mixture evenly into the greased muffin tin, filling each cup about 3/4 full.</li>
+            <li class="lis">Add any optional add-ins to each muffin cup if desired.</li>
+            <li class="lis">Bake in the preheated oven for 20-25 minutes, or until the egg muffins are set and lightly golden on top.</li>
+            <li class="lis">Remove the muffin tin from the oven and let the egg muffins cool for a few minutes.</li>
+            <li class="lis">Use a knife or spatula to gently loosen the edges of the egg muffins from the muffin tin.</li>
+            <li class="lis">Carefully remove the egg muffins from the tin and serve warm.</li>
+            <li class="lis">Store any leftover egg muffins in an airtight container in the refrigerator for up to 3 days. They can be reheated in the microwave before serving.</li>
+        </ol>
+        
+        <hr>
+    </div>   
+
+</div>
+
+
+<div class="lunch" id="lunch">
+<h2>Lunch</h2>
+
+<div class="lunch-row">
+    <div class="lunch-colone">
+        <div class="menu">
+            <div class="one-menu img-one">
+                <div class="menu-head">
+                    <a href="#rajma" id="#rajma-button"><button  onclick="rajma();">Rajma Chawal</button></a>
+                </div>
+            </div>
+            <div class="one-menu img-two">
+                <div class="menu-head">
+                    <a href="#menthu" id="#menthu-button"><button  onclick="menthu();">Menthu Papu</button></a>
+                </div>
+            </div>
+            <div class="one-menu img-three">
+                <div class="menu-head">
+                    <a href="#paneer" id="#paneer-button"><button  onclick="paneer();">Paneer Butter Masala</button></a>
+                </div>
+            </div>
+            <div class="one-menu img-four" style="border: none;">
+                <div class="menu-head">
+                    <a href="#pulihora" id="#pulihora-button"><button  onclick="pulihora();">Pulihora</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lunch-coltwo">
+        <div class="rajma" id="rajma" style="display:none">
+            <div class="content-head">
+            <h3>Rajma Chawal</h3>
+            <button class="closebutton"  onclick="rajmaclose();">&times;</button>
+            </div>
+            <h4>Ingredients:</h4>
+            <ul class="ing">
+                <li class="lis">1 cup Rajma (Kidney Beans), soaked overnight</li>
+                <li class="lis">2 cups Basmati Rice</li>
+                <li class="lis">2 Onions, finely chopped</li>
+                <li class="lis">2 Tomatoes, finely chopped</li>
+                <li class="lis">2 Green Chilies, slit</li>
+                <li class="lis">1 tablespoon Ginger-Garlic Paste</li>
+                <li class="lis">1 teaspoon Cumin Seeds</li>
+                <li class="lis">1 teaspoon Red Chili Powder</li>
+                <li class="lis">1/2 teaspoon Turmeric Powder</li>
+                <li class="lis">1 teaspoon Garam Masala</li>
+                <li class="lis">2 tablespoons Oil</li>
+                <li class="lis">Salt to taste</li>
+                <li class="lis">Fresh Coriander Leaves (for garnish)</li>
+            </ul>
+        
+            <h4>Instructions:</h4>
+            <ol class="olis">
+                <li class="lis">Pressure cook soaked rajma with salt until soft.</li>
+                <li class="lis">Heat oil in a pan, add cumin seeds, chopped onions, and sauté until golden brown.</li>
+                <li class="lis">Add ginger-garlic paste and sauté for a minute.</li>
+                <li class="lis">Add chopped tomatoes, green chilies, red chili powder, turmeric powder, garam masala, and salt. Cook until oil separates.</li>
+                <li class="lis">Add cooked rajma along with its water and simmer for 10-15 minutes.</li>
+                <li class="lis">Meanwhile, cook basmati rice separately.</li>
+                <li class="lis">Serve hot rajma with steamed basmati rice.</li>
+                <li class="lis">Garnish with fresh coriander leaves.</li>
+            </ol>
+            <hr>
+        </div>
+
+        <div class="menthu" id="menthu" style="display:none">
+            <div class="content-head">
+            <h3>Menthu Papu</h3>
+            <button class="closebutton"  onclick="menthuclose();">&times;</button>
+            </div>
+            <h4>Ingredients:</h4>
+            <ul class="ing">
+                <li class="lis">1 cup Toor Dal</li>
+                <li class="lis">2 tablespoons Fenugreek Seeds</li>
+                <li class="lis">1 Onion, finely chopped</li>
+                <li class="lis">2 Tomatoes, finely chopped</li>
+                <li class="lis">2 Green Chilies, slit</li>
+                <li class="lis">1 teaspoon Mustard Seeds</li>
+                <li class="lis">1 teaspoon Cumin Seeds</li>
+                <li class="lis">1/2 teaspoon Turmeric Powder</li>
+                <li class="lis">A pinch of Asafoetida (Hing)</li>
+                <li class="lis">Few Curry Leaves</li>
+                <li class="lis">2 tablespoons Ghee or Oil</li>
+                <li class="lis">Salt to taste</li>
+                <li class="lis">Fresh Coriander Leaves (for garnish)</li>
+            </ul>
+        
+            <h4>Instructions:</h4>
+            <ol class="olis">
+                <li class="lis">Wash and pressure cook toor dal with fenugreek seeds, turmeric powder, and salt until soft.</li>
+                <li class="lis">Heat ghee or oil in a pan, add mustard seeds, cumin seeds, and asafoetida. Let them splutter.</li>
+                <li class="lis">Add chopped onions, green chilies, and curry leaves. Sauté until onions turn translucent.</li>
+                <li class="lis">Add chopped tomatoes and cook until they turn mushy.</li>
+                <li class="lis">Add cooked dal to the pan and mix well. Adjust consistency by adding water if needed.</li>
+                <li class="lis">Simmer for a few minutes until the flavors blend well.</li>
+                <li class="lis">Garnish with fresh coriander leaves.</li>
+                <li class="lis">Serve hot with rice or roti.</li>
+            </ol>
+            <hr>
+        </div>
+
+        <div class="paneer" id="paneer" style="display:none">
+            <div class="content-head">
+            <h3>Paneer Butter Masala</h3>
+            <button class="closebutton"  onclick="paneerclose();">&times;</button>
+            </div>
+            <h4>Ingredients:</h4>
+            <ul class="ing">
+                <li class="lis">200g Paneer (cubed)</li>
+                <li class="lis">2 tablespoons Butter</li>
+                <li class="lis">2 Onions (finely chopped)</li>
+                <li class="lis">2 Tomatoes (pureed)</li>
+                <li class="lis">1 tablespoon Ginger-Garlic Paste</li>
+                <li class="lis">1 teaspoon Red Chili Powder</li>
+                <li class="lis">1/2 teaspoon Turmeric Powder</li>
+                <li class="lis">1 teaspoon Garam Masala</li>
+                <li class="lis">1/2 cup Fresh Cream</li>
+                <li class="lis">Salt to taste</li>
+                <li class="lis">Fresh Coriander Leaves (for garnish)</li>
+            </ul>
+        
+            <h4>Instructions:</h4>
+            <ol class="olis">
+                <li class="lis">Heat butter in a pan.</li>
+                <li class="lis">Add chopped onions and sauté until golden brown.</li>
+                <li class="lis">Add ginger-garlic paste and sauté for a minute.</li>
+                <li class="lis">Pour in the tomato puree and cook until oil separates.</li>
+                <li class="lis">Add red chili powder, turmeric powder, garam masala, and salt. Mix well.</li>
+                <li class="lis">Add paneer cubes and cook for 2-3 minutes.</li>
+                <li class="lis">Pour in fresh cream and mix gently.</li>
+                <li class="lis">Cook for another 2 minutes.</li>
+                <li class="lis">Garnish with fresh coriander leaves.</li>
+                <li class="lis">Serve hot with naan or rice.</li>
+            </ol>
+            <hr>
+        </div>
+
+        <div class="pulihora" id="pulihora" style="display:none">
+            <div class="content-head">
+            <h3>Pulihora</h3>
+            <button class="closebutton"  onclick="pulihoraclose();">&times;</button>
+            </div>
+            <h4>Ingredients:</h4>
+            <ul class="ing">
+                <li class="lis">1 cup Rice</li>
+                <li class="lis">1 Lemon-sized Tamarind</li>
+                <li class="lis">3 tablespoons Oil</li>
+                <li class="lis">1 teaspoon Mustard Seeds</li>
+                <li class="lis">2-3 Dried Red Chilies</li>
+                <li class="lis">1/2 teaspoon Turmeric Powder</li>
+                <li class="lis">10-12 Curry Leaves</li>
+                <li class="lis">2 tablespoons Peanuts</li>
+                <li class="lis">2 Green Chilies, slit</li>
+                <li class="lis">Salt to taste</li>
+                <li class="lis">Fresh Coriander Leaves (for garnish)</li>
+            </ul>
+        
+            <h4>Instructions:</h4>
+            <ol class="olis">
+                <li class="lis">Cook rice and allow it to cool.</li>
+                <li class="lis">Soak tamarind in warm water and extract its juice.</li>
+                <li class="lis">Heat oil in a pan, add mustard seeds, peanuts. Sauté until dals turn golden brown.</li>
+                <li class="lis">Add curry leaves, green chilies, turmeric powder. Sauté for a minute.</li>
+                <li class="lis">Add tamarind extract, salt, and cook until the mixture thickens.</li>
+                <li class="lis">Add cooked rice to the tamarind mixture and mix well until rice is coated evenly.</li>
+                <li class="lis">Garnish with fresh coriander leaves.</li>
+                <li class="lis">Serve Pulihora hot or at room temperature.</li>
+            </ol>
+            <hr>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<div class="drinks" id="drinks">
+<h2>Drinks</h2>
+
+<div class="drinks-accordian">
+    <div class="drink-item">
+        <div class="drink-title opened">
+          Hot Chocolate Coffee
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="drink-content" style="max-height: 500px;">
+            <div class="body-text">
+                <div class="coffee-row">
+                    <div class="coffee-image">
+                        <img src="./img/coffee.png" alt="coffee" loading="lazy" class="dimg">
+                    </div>
+                    <div class="coffee-text">
+                        <h4>Ingredients:</h4>
+    <ul class="ing">
+        <li class="lis">1 cup Milk</li>
+        <li class="lis">2 tablespoons Instant Coffee Powder</li>
+        <li class="lis">1 packet of Nestle<sup>&reg;</sup> Carnation powder</sup></li>
+    </ul>
+
+    <h4>Instructions:</h4>
+    <ol class="olis">
+        <li class="lis">In a saucepan, heat milk over medium heat until hot but not boiling.</li>
+        <li class="lis">Add instant coffee powder, carnation powder. Whisk until well combined and there are no lumps.</li>
+        <li class="lis">Pour the hot chocolate coffee into mugs.</li>
+        <li class="lis">Serve hot and enjoy!</li>
+    </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="drink-item">
+        <div class="drink-title">
+          Green Tea
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="drink-content">
+            <div class="body-text">
+                <div class="tea-row">
+                    <div class="tea-image">
+                        <img src="./img/green-tea.png" alt="tea"  loading="lazy" class="dimg">
+                    </div>
+                    <div class="tea-text">
+                        <h4>Ingredients:</h4>
+    <ul class="ing">
+        <li class="lis">1 Green Tea Bag</li>
+        <li class="lis">1 cup Water (filtered)</li>
+        <li class="lis">Couple Mint Leaves</li>
+        <li class="lis">1 teaspoon Dried Lemongrass</li>
+        <li class="lis">1/2 teaspoon Honey (optional)</li>
+    </ul>
+
+    <h4>Instructions:</h4>
+    <ol class="olis">
+        <li class="lis">Boil water in a saucepan.</li>
+        <li class="lis">Add mint leaves and lemongrass to the boiling water.</li>
+        <li class="lis">Turn off the heat and let the herbs steep in the water for 3-5 minutes.</li>
+        <li class="lis">Place the green tea bag in a cup.</li>
+        <li class="lis">Pour the steeped herbal water over the tea bag.</li>
+        <li class="lis">Let the tea bag steep in the water for 2-3 minutes.</li>
+        <li class="lis">Remove the tea bag and discard.</li>
+        <li class="lis">Stir in honey if desired.</li>
+        <li class="lis">Serve hot and enjoy!</li>
+    </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+</body>
+<footer>
+<div class="footer-freya">
+    <div class="footer-text">
+        <p>Freyja's cookbook is a compilation of nourishing and satisfying recipes, carefully selected by me with a focus on staying healthy without breaking the bank. The dishes are designed to be both comforting and nutritious, making it easy to treat yourself right.</p>
+    </div>
+    <div class="footer-row">
+        <div class="footer-col">
+            <h1>Freyja</h1>
+        </div>
+        <div class="footer-col" style="display: flex; column-gap: 20px;">
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/akshay-yadav-muchumari-123977174/" target="_blank"><button><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24" height="24"><path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"/><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"/><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"/><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"/></svg></button></a>
+            </div>
+            <div class="contact">
+                <a href="https://github.com/akshay898" target="_blank"><button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+</html>
